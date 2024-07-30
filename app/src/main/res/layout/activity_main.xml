@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:background="@color/colorAccent"
+       android:padding="16dp"
+       android:gravity="center"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       android:layout_marginBottom="16dp">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="liste des emplacements "
+           android:textSize="24sp"
+           android:textColor="@color/white"
+           android:layout_gravity="center"
+           android:layout_marginBottom="8dp"
+       > </TextView>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+       <ImageView
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:src="@drawable/heure"> </ImageView>
+       <TextView
+           android:id="@+id/DateTimeTxt"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Date et heure actuelle :"
+           android:textSize="16sp"
+           android:textColor="@android:color/white"
+           android:layout_gravity="center"
+           android:layout_marginBottom="8dp" /></LinearLayout>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center"
+           android:layout_marginBottom="16dp">
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_temp"> </ImageView>
+
+           <TextView
+               android:id="@+id/temperatureTxt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="temperature actuelle :"
+               android:textSize="16sp"
+               android:textColor="@android:color/white"/>
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"> </ListView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/colorHighPriority"
+        android:src="@drawable/ic_add"> </com.google.android.material.floatingactionbutton.FloatingActionButton>
+</LinearLayout>
+
+</android.widget.RelativeLayout>
