@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main2"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+       <TableLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+          android:orientation="horizontal" >
+
+           <TableRow>
+               <ImageView
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:src="@drawable/productssign"> </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="nom de l emplacement"
+                android:id="@+id/emplacemtNameTxt"
+                >
+
+            </TextView>
+           <ImageView
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:src="@drawable/calandirier"></ImageView>
+
+               <TextView
+                   android:id="@+id/DateTxt"
+                   android:layout_width="170dp"
+                   android:layout_height="match_parent"
+                   android:text="Date ">
+
+               </TextView>
+           </TableRow>
+           <TableRow>
+               <ImageView
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:src="@drawable/ic_temp"> </ImageView>
+
+               <TextView
+                   android:id="@+id/TempTxt"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="Temperature">
+
+               </TextView>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/productssign"></ImageView>
+
+               <TextView
+                   android:id="@+id/productnameTxt"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="nom produit"></TextView>
+           </TableRow>
+
+       </TableLayout>
+
+        <TextView
+            android:id="@+id/addTxt"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="adresse"></TextView>
+    </LinearLayout>
+</android.widget.RelativeLayout>

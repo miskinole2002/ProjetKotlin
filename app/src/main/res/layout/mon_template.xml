@@ -4,133 +4,241 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/main1"
+    android:background="@color/colorTextSecondary"
     >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <Toolbar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:title="Ajout D'un emplacement"
             android:background="@color/colorAccent"
-            android:textSize="24sp"> </Toolbar>
-        <EditText
-            android:src="@drawable/ic_add"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/emplacemtTxt"
-            android:hint=" nom de lemplacement: ">
 
-        </EditText>
+            android:gravity="center"
+            android:textSize="24sp"
+            android:title="Ajout D'un emplacement"></Toolbar>
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/TemperatureMaxTxt"
-            android:hint=" Temperature Max: ">
-
-        </EditText>
-
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/TemperatureMinTxtTxt"
-            android:hint=" Temperature Min: ">
-
-        </EditText>
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/HumidityMaxTxt"
-            android:hint=" Humidite maximale: ">
-
-        </EditText>
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/HumidityMinTxtTxt"
-            android:hint=" Humidite Min: ">
-
-        </EditText>
-        <LinearLayout
-            android:layout_width="wrap_content"
+        <TableLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-        <EditText
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/productssign"></ImageView>
+
+                <EditText
+                    android:id="@+id/emplacemtTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint=" nom de lemplacement: "
+                    android:src="@drawable/ic_add"
+                    android:textColor="@color/black"
+                    >
+
+                </EditText>
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/productssign"></ImageView>
+
+                <EditText
+                    android:id="@+id/produitTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint=" nom du produit: "
+                    android:src="@drawable/ic_add"
+                    android:textColor="@color/black">
+
+                </EditText>
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_temp">
+
+                </ImageView>
+
+                <EditText
+                    android:id="@+id/TemperatureMaxTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint=" Temperature Max: "
+                    android:textColor="@color/black">
+
+                </EditText>
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/froidimg"
+                    >
+
+                </ImageView>
+
+                <EditText
+                    android:id="@+id/TemperatureMinTxtTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint=" Temperature Min: "
+                    android:textColor="@color/black">
+
+                </EditText>
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/humidite"></ImageView>
+
+                <EditText
+                    android:id="@+id/HumidityMaxTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint=" Humidite maximale: "
+                    android:textColor="@color/black">
+
+                </EditText>
+            </TableRow>
+
+            <TableRow >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/hummin"></ImageView>
+
+                <EditText
+                    android:id="@+id/HumidityMinTxtTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint=" Humidite Min: "
+                    android:textColor="@color/black">
+
+                </EditText>
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/calandirier">
+
+                </ImageView>
+                <EditText
+                    android:id="@+id/DateTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint=" Date: "
+                    android:textColor="@color/black"> </EditText>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/heure">  </ImageView>
+                <EditText
+                    android:id="@+id/HeureTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint=" Heure: "
+                    android:textColor="@color/black"> </EditText>
+
+            </TableRow>
+
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/longi"></ImageView>
+
+                <EditText
+                    android:id="@+id/LatitudeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint=" Latitude: "
+                    android:textColor="@color/black"></EditText>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/longi"></ImageView>
+
+                <EditText
+                    android:id="@+id/LongitudeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint=" Longitude: "
+                    android:textColor="@color/black"></EditText>
+
+            </TableRow>
+
+            <Button
+                android:id="@+id/convertBTn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAccent"
+                android:hint="Convertir"></Button>
+
+
+            <TextView
+                android:id="@+id/AdresseTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Adresse : "
+                android:textColor="@color/black"></TextView>
+
+        </TableLayout>
+
+        <TableLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/DateTxt"
-            android:hint=" Date: "> </EditText>
+            android:layout_height="wrap_content">
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/HeureTxt"
-            android:hint=" Heure:"> </EditText>
-        </LinearLayout>
+            <TableRow>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/LatitudeTxt"
-            android:hint=" Latitude:"> </EditText>
+                <Button
+                    android:id="@+id/saveBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorLowPriority"
+                    android:text="Enregistrer"
+                    android:textColor="@color/black"></Button>
+<TextView
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/LongitudeTxt"
-            android:hint=" Longitude: "> </EditText>
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="                                                      "
+    >
 
-        <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/convertBTn"
-        android:hint="Convertir"
-        android:background="@color/colorAccent">
-        </Button>
-
-        </LinearLayout>
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/AdresseTxt"
-            android:hint=" Adresse : "> </EditText>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/saveBtn"
-        android:text="Enregistrer"
-        android:background="@color/colorLowPriority"> </Button>
-    <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-
-    android:text="            "> </TextView>
-        <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/cancelBtn"
-        android:background="@color/colorHighPriority"
-        android:text="Annuler"> </Button>
-    </LinearLayout>
-
-
+</TextView>
+                <Button
+                    android:id="@+id/cancelBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorHighPriority"
+                    android:text="Annuler"
+                    android:textColor="@color/black"></Button>
+            </TableRow>
+        </TableLayout>
 
 
     </LinearLayout>
